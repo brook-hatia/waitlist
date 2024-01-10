@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/waitlist/static/css/main.74bebf07.css",
+    "main.js": "/waitlist/static/js/main.01f4e782.js",
+    "static/media/bg.png": "/waitlist/static/media/bg.e13ef178da531ff5db8c.png",
+    "index.html": "/waitlist/index.html",
+    "main.74bebf07.css.map": "/waitlist/static/css/main.74bebf07.css.map",
+    "main.01f4e782.js.map": "/waitlist/static/js/main.01f4e782.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74bebf07.css",
+    "static/js/main.01f4e782.js"
+  ]
+}

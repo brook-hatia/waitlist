@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f6f6f6;
+  background: url('./images/bg.png') no-repeat center center fixed;
+  background-size:cover;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.above > :nth-child(1) {
+  padding: 2rem 3rem;
+  font-size: 33px;
+  font-weight: 200;
+}
+
+.above > :nth-child(1) > a {
+  text-decoration: none;
+  color: black;
+}
+
+.above > :nth-child(2){
+  text-align: center;
+  font-size: 22px;
+  margin: 10rem 30rem;
+}
+
+.above > :nth-child(2) > p {
+  font-weight: 300;
+}
+
+.above > :nth-child(2) > button {
+  background-color: #42a5f5;
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.above > :nth-child(2) > button > a {
+  text-decoration: none;
+  color: white
+}
+
+.below {
+  margin-bottom: 5rem;
+}
+.below > :nth-child(1) {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.collapsibles {
+  padding: 0 10rem;
+}
+
+.collapsible-child {
+  background-color: rgb(255, 255, 255);
+}
+
+.first {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.last {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.collapsible-child > :nth-child(1) {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 0 5rem;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.collapsible-child > :nth-child(2) {
+  box-shadow: 0 0 1.5px rgba(4, 4, 4, 0.5);
+  background-color: rgb(245, 245, 245);
+  font-size: 22px;
+  font-weight: 250;
+  padding: 0 4rem;
+}
+
+.active {
+  max-height: 200px;
+  opacity: 1;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+  
+}
+
+.hidden {
+  max-height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+
+.active > *, .hidden > * {
+  padding: 1rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 1333px) {
+  .above > :nth-child(2){
+    text-align: center;
+    font-size: 22px;
+    margin: 10rem 20rem;
+  }
+}
+
+@media screen and (max-width: 1017px) {
+  body {
+    background: url('./images/bg.png') no-repeat center center fixed;
+    background-size:contain;
+  }
+
+  .above > :nth-child(2){
+    margin: 10rem 15rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .above > :nth-child(2) {
+    margin: 0 5rem 5rem 5rem;
+  }
+
+  .above > :nth-child(1) {
+    text-align: center;
+  }
+
+  .collapsibles {
+    margin: 0 5rem;
+    padding: 0;
+  }
+
+  .collapsible-child > :nth-child(1) {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .collapsibles {
+    margin: 0 5rem;
+    padding: 0;
+  }
+
+  p{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .above > :nth-child(2) {
+    margin: 0 3rem 3rem 3rem;
+  }
+  .collapsibles {
+    margin: 0 1rem;
+  }
+}

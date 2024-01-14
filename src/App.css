@@ -90,7 +90,7 @@ p {
 }
 
 .active {
-  max-height: 200px;
+  max-height: 1000px;
   opacity: 1;
   transition: opacity 0.5s ease, max-height 0.5s ease;
   
@@ -143,6 +143,10 @@ p {
 
   .collapsible-child > :nth-child(1) {
     padding: 0 2rem;
+  }
+
+  .active > *, .hidden > * {
+    margin-left: -3rem;
   }
 }
 

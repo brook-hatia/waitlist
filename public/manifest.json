@@ -1,6 +1,6 @@
 {
-  "short_name": "DailyGameIdeas",
-  "name": "DailyGameIdeas",
+  "short_name": "ggIdeas",
+  "name": "ggIdeas",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
